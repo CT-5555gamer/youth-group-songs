@@ -107,3 +107,7 @@
   .mobile-polish .partsRow+.partsRow{margin-top:6px}
   .mobile-polish.long-parts .partLine{font-size:.93em;line-height:1.20}
 }
+
+/* v20: solid colour behind iOS standalone status bar, without translucent overlay. */
+html { background-color:#24626c; }
+@media (display-mode:standalone) { html, body { background-color:#24626c; } }
