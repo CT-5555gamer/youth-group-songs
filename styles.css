@@ -111,3 +111,21 @@
 /* v20: solid colour behind iOS standalone status bar, without translucent overlay. */
 html { background-color:#24626c; }
 @media (display-mode:standalone) { html, body { background-color:#24626c; } }
+
+/* v21: small interface refinements only; no lyric or column changes. */
+.searchWrap{gap:7px;box-shadow:0 2px 7px #103b4114;border-color:#d4e6e3}
+.searchIcon{font-size:25px;line-height:1;color:#668a86;font-weight:400;flex:none;transform:translateY(-1px)}
+.search{min-width:0;background:transparent}.search:focus-visible{outline:none}
+.searchWrap:focus-within{outline:2px solid #c2e3df;outline-offset:1px}
+.clear{cursor:pointer;min-width:28px;min-height:28px;border-radius:7px}
+.row{cursor:pointer;border-color:#dce9e7;transition:background .12s ease,transform .12s ease,box-shadow .12s ease}
+.row:active{background:#e8f4f1;transform:scale(.993);box-shadow:inset 0 1px 3px #173c3b20}
+button:focus-visible{outline:3px solid #9bd8d0;outline-offset:2px}
+.menuSectionLabel{margin:17px 0 7px;color:#56726e;font-size:11px;letter-spacing:.095em;font-weight:800}
+.card{max-height:min(85vh,720px);overflow-y:auto;box-shadow:0 18px 50px #0c2e3440}
+.card .primary,.card .secondary{margin-top:8px;cursor:pointer}
+.card button:active,.menu:active,.back:active,.gear:active{filter:brightness(.94)}
+button:disabled{opacity:.65;cursor:wait}
+.ygsToast{position:fixed;z-index:99;bottom:max(22px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 36px);background:#163f42;color:white;padding:11px 16px;border-radius:12px;box-shadow:0 8px 28px #0004;font-size:14px;font-weight:600;text-align:center;pointer-events:none}
+.ygsToast.isError{background:#773a32}
+@media(prefers-reduced-motion:reduce){.row{transition:none}}
