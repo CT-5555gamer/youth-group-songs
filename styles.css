@@ -1,0 +1,109 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172126;background:#f4f7f7}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f4f7f7}button,input,textarea,select{font:inherit}.app{min-height:100vh}.home{background:#24626c;min-height:100vh;padding-top:env(safe-area-inset-top)}.header{height:54px;display:flex;align-items:center;justify-content:center;color:white;font-size:19px;font-weight:700;position:relative;padding:0 80px;text-align:center}.menu{position:absolute;right:max(10px,env(safe-area-inset-right));background:white;color:#214f65;border:0;border-radius:8px;padding:8px 14px;font-weight:700}.searchWrap{height:42px;margin:5px 7px 2px;background:white;border:1px solid #bed8d5;border-radius:12px;display:flex;align-items:center;padding:0 13px}.search{border:0;outline:0;flex:1;font-size:15px}.clear{border:0;background:none;font-size:26px;color:#6c7a7a}.list{background:#24626c;padding:2px 4px 12px;min-height:calc(100vh - 103px)}.row{height:40px;margin-bottom:2px;background:#fffefc;border:1px solid #d6e3e1;border-radius:9px;display:flex;align-items:center;overflow:hidden;width:100%;padding:0;text-align:left}.num{width:32px;height:100%;display:flex;align-items:center;justify-content:center;background:#edf4f3;font-size:12px;font-weight:700;color:#3d6863;flex:none}.title{padding:0 9px;font-size:15px;font-weight:600;color:#215f5a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.song{min-height:100vh}.songHead{color:white;position:sticky;top:0;z-index:5;padding-top:env(safe-area-inset-top);min-height:86px;display:flex;align-items:flex-end;justify-content:center}.songHeadInner{height:58px;display:flex;align-items:center;justify-content:center;width:100%;padding:0 max(58px,env(safe-area-inset-right)) 0 max(58px,env(safe-area-inset-left));position:relative}.back,.gear{position:absolute;border:0;color:white;background:transparent;font-weight:700}.back{left:max(8px,env(safe-area-inset-left));font-size:40px}.gear{right:max(12px,env(safe-area-inset-right));font-size:23px}.songTitle{font-size:20px;font-weight:700;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lyrics{padding:12px max(16px,env(safe-area-inset-right)) 32px max(16px,env(safe-area-inset-left));max-width:900px;margin:auto}.block{margin:0 0 18px}.blockLabel{text-align:center;font-size:12px;font-weight:700;opacity:.7;margin-bottom:4px}.line{text-align:center;line-height:1.38;margin:1px 0}.chorus{padding:9px 10px;border-radius:10px;background:#ffffff80}.instruction{font-style:italic;opacity:.8}.parts{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px;border:1px solid #0002;border-radius:10px}.partLabel{text-align:center;font-weight:700;font-size:12px}.partLine{text-align:center;line-height:1.35}.overlay{position:fixed;inset:0;background:#0008;z-index:20;display:flex;align-items:center;justify-content:center;padding:24px}.card{background:white;border-radius:18px;padding:20px;width:min(440px,100%)}.card h2{margin:0 0 14px}.segment{display:flex;background:#edf4f3;border-radius:10px;padding:3px}.segment button{flex:1;border:0;border-radius:8px;padding:11px;font-weight:700;color:#315d5a}.segment .on{background:#24626c;color:white}.primary,.secondary,.danger{width:100%;margin-top:12px;padding:12px;border-radius:10px;font-weight:700}.primary{border:0;background:#24626c;color:white}.secondary{background:white;border:1px solid #b9cfcc;color:#24626c}.danger{background:white;border:1px solid #d99;color:#a22}.editor{position:fixed;inset:0;background:#f4f7f7;z-index:30;padding-top:env(safe-area-inset-top);overflow:auto}.editorHead{height:54px;position:sticky;top:0;background:white;border-bottom:1px solid #d7e1df;display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:2}.editorHead button{border:0;background:none;color:#167065;font-weight:700}.editorBody{padding:14px 14px 60px;max-width:850px;margin:auto}.label{font-size:12px;font-weight:700;color:#5b6e6b;display:block;margin:10px 0 5px}.field,textarea,select{width:100%;border:1px solid #c7d8d5;border-radius:9px;background:white;padding:10px}.fieldRow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.help{font-size:13px;color:#617270}.section{background:white;border:1px solid #d4e0de;border-radius:12px;padding:10px;margin:12px 0}.sectionTop{display:flex;justify-content:space-between;font-weight:700;color:#315d5a}.sectionTop button{border:0;background:none;font-size:20px}.types{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin:9px 0}.types button{border:0;border-radius:7px;padding:7px 3px;background:#edf4f3;font-size:11px;font-weight:700}.types .on{background:#24626c;color:white}textarea{min-height:92px;resize:vertical}.addButtons{display:flex;flex-wrap:wrap;gap:7px}.addButtons button{border:0;background:#e5f0ee;color:#24626c;padding:9px 10px;border-radius:8px;font-weight:700}.empty{text-align:center;color:white;padding:30px}@media(orientation:landscape){.header{height:46px}.searchWrap{height:36px;margin:3px 18px}.list{padding:2px 18px}.row{height:38px;margin-bottom:3px}.songHead{min-height:58px;padding-top:env(safe-area-inset-top)}.songHeadInner{height:58px}.lyrics{padding-left:max(72px,env(safe-area-inset-left));padding-right:max(72px,env(safe-area-inset-right))}.editor{padding-top:env(safe-area-inset-top)}.editorBody{padding-top:8px}}@media(max-width:480px){.header{font-size:17px}.songTitle{font-size:18px}}
+
+/* PWA v2: match the stable phone song view and use larger screens efficiently. */
+.songTitleButton{border:0;background:transparent;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;max-width:100%;padding:4px 10px;cursor:pointer}.hall{display:block;font-size:8px;font-weight:700;letter-spacing:1.2px;color:#ffffffc7;margin-top:1px}.lyrics{max-width:900px}.line{text-align:left;line-height:1.24;margin:0}.block{margin-bottom:20px}.chorusLabel{display:flex;align-items:center;margin:2px 0}.chorusLabel span{height:1px;opacity:.3;flex:1;background:currentColor}.chorusLabel b{font-size:13px;margin:0 8px;color:inherit}.parts{display:block;padding:8px 8px 10px;border:1px solid #0002;border-radius:10px}.partsHeaders,.partsRow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}.partsHeaders{margin-bottom:7px}.partsRow+.partsRow{margin-top:8px}.partLine{text-align:left;line-height:1.22}
+@media (min-width:650px){.list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 6px;align-content:start}.row{margin-bottom:0}}
+@media (min-width:900px){.list{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 7px}}
+@media (min-width:1200px){.list{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px 8px}}
+@media (min-width:1600px){.list{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+/* PWA v3: continuous search, denser desktop index, and roomier desktop songs. */
+.songTitleButton.longTitle{font-size:16px;line-height:1.05;white-space:normal;overflow:visible;text-overflow:clip;max-width:calc(100% - 92px)}
+@media (min-width:900px){
+  .lyrics{max-width:1180px;padding-top:14px}
+  .block{margin-bottom:22px}
+  .line{line-height:1.2}
+}
+@media (min-width:1400px){
+  .list{grid-template-columns:repeat(6,minmax(0,1fr));gap:3px 6px;padding-top:1px}
+  .row{height:33px;border-radius:7px}
+  .num{width:31px;font-size:11px}
+  .title{font-size:14px;padding:0 7px}
+  .header{height:48px}
+  .searchWrap{height:35px;margin-top:3px;margin-bottom:2px}
+}
+@media (min-width:1800px){.list{grid-template-columns:repeat(7,minmax(0,1fr))}}
+@media (max-width:480px){.songTitleButton.longTitle{font-size:14px;line-height:1.05}}
+
+/* PWA v4: web-inspired polish while preserving the proven phone layout. */
+@media (hover:hover){
+  .row{transition:transform .14s ease,box-shadow .14s ease,background .14s ease}
+  .row:hover{transform:translateY(-1px);box-shadow:0 5px 13px #1238;background:#fff}
+  .row:hover .title{color:#174f4b}
+}
+@media (min-width:900px){
+  .home{background:linear-gradient(145deg,#1e5963,#2b737b 58%,#24626c)}
+  .header{font-size:20px;text-shadow:0 2px 8px #0003}
+  .searchWrap{box-shadow:0 3px 10px #1232;border-color:#d8e9e7}
+  .row{border-color:#d5e7e4;box-shadow:0 2px 7px #1232}
+  .num{border-right:1px solid #d8e7e5;background:linear-gradient(180deg,#f4f9f8,#e9f2f1)}
+  .song{background:linear-gradient(145deg,color-mix(in srgb,var(--song-bg) 94%,white),var(--song-bg))!important;padding-bottom:28px}
+  .songHead{box-shadow:0 7px 20px #0002}
+  .lyrics{width:min(96vw,1320px);max-width:1320px;margin:18px auto 34px;padding:24px clamp(26px,3vw,44px) 30px;background:linear-gradient(180deg,#fffffff5,#ffffffdd);border:1px solid color-mix(in srgb,var(--song-accent) 18%,#d8e0e2);border-top:4px solid var(--song-accent);border-radius:8px 8px 20px 20px;box-shadow:0 18px 42px #0f172a18}
+  .songFlow.single-column{max-width:980px;margin:auto}
+  .songFlow.two-column{display:grid;grid-template-columns:1fr 1fr;gap:clamp(38px,4vw,64px);align-items:start}
+  .songColumn{min-width:0}
+  .songColumn .block+.block{margin-top:26px}
+  .line{line-height:1.27}
+  .block{margin-bottom:25px;break-inside:avoid}
+  .chorusLabel{color:color-mix(in srgb,var(--song-accent) 82%,#20262b);margin:5px 0 8px}
+  .chorusLabel span{background:color-mix(in srgb,var(--song-accent) 30%,transparent)}
+  .parts{background:color-mix(in srgb,var(--song-accent) 4%,white);border-color:color-mix(in srgb,var(--song-accent) 20%,transparent);border-top:3px solid color-mix(in srgb,var(--song-accent) 70%,#222);padding:14px 16px;border-radius:10px}
+  .partLabel{color:color-mix(in srgb,var(--song-accent) 80%,#20262b);text-transform:uppercase;letter-spacing:.045em}
+}
+@media (min-width:1400px){
+  .list{padding-left:14px;padding-right:14px;gap:4px 7px}
+  .row{height:32px}
+}
+@media (max-width:899px){
+  .songFlow.two-column{display:block}
+}
+
+/* PWA v5: shared visual language + improved adaptive lyric sizing. */
+@media (max-width:899px){
+  .song{background:linear-gradient(180deg,color-mix(in srgb,var(--song-bg) 96%,white),var(--song-bg))!important}
+  .lyrics{margin:10px 8px 22px;padding:12px 8px 22px;border-top:2px solid color-mix(in srgb,var(--song-accent) 62%,transparent);border-radius:10px;background:color-mix(in srgb,#fff 18%,transparent)}
+  .chorusLabel{color:color-mix(in srgb,var(--song-accent) 84%,#20262b);margin:5px 0 8px}
+  .chorusLabel span{background:color-mix(in srgb,var(--song-accent) 34%,transparent)}
+  .parts{background:color-mix(in srgb,var(--song-accent) 3%,white);border-color:color-mix(in srgb,var(--song-accent) 18%,transparent);border-top:2px solid color-mix(in srgb,var(--song-accent) 66%,#222)}
+  .partLabel{color:color-mix(in srgb,var(--song-accent) 82%,#20262b)}
+}
+@media (min-width:900px){
+  .lyrics{min-height:calc(100vh - 150px)}
+  .songFlow.voice-song{max-width:1020px}
+  .voice-song .partsRow{column-gap:22px}
+  .voice-song .parts{padding:16px 18px}
+}
+
+
+/* PWA v6: richer song personality, roomier voice songs, smaller landing menu. */
+.menu{padding:6px 11px;font-size:15px;border-radius:7px}
+@media (min-width:900px){
+  .voice-song{font-size:inherit}
+  .voice-song .block{margin-bottom:28px}
+  .voice-song .parts{padding:16px 20px}
+  .voice-song .partsRow{column-gap:30px}
+  .decor-cross .lyrics{box-shadow:0 18px 42px #7f1d1d18}
+  .decor-royal .lyrics{box-shadow:0 18px 42px #254e9120}
+  .decor-scripture .lyrics{box-shadow:0 18px 42px #9a7b4f18}
+}
+@media (max-width:899px){.menu{padding:6px 10px;font-size:14px}}
+
+/* PWA v7: targeted Crayon Box word colours + clearly larger desktop voice songs. */
+.crayon-red{color:#c62828}.crayon-brown{color:#8b4a20}.crayon-blue{color:#1565c0}.crayon-yellow{color:#d49a00}
+@media (min-width:900px){
+  .songFlow.voice-song{max-width:1120px}
+  .voice-song .line,.voice-song .partLine{line-height:1.25}
+  .voice-song .partLabel{font-size:13px}
+}
+
+
+/* PWA v12: mobile polish — keep v11 font baseline, tighten vertical rhythm,
+   and give only long simultaneous-part sections a little more room. */
+@media (max-width:899px){
+  .mobile-polish .block{margin-bottom:16px}
+  .mobile-polish .chorusLabel{margin:3px 0 6px}
+  .mobile-polish .partsHeaders{margin-bottom:5px}
+  .mobile-polish .partsRow+.partsRow{margin-top:6px}
+  .mobile-polish.long-parts .partLine{font-size:.93em;line-height:1.20}
+}
