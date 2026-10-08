@@ -1,0 +1,1 @@
+v19: Removed same-device localStorage cross-tab auto-updates. Each open window retains its displayed songs until its own manual Refresh Songs action. First-use cloud initialization and administrator cloud saves remain. Song layouts unchanged.
