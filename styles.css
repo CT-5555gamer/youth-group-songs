@@ -129,3 +129,34 @@ button:disabled{opacity:.65;cursor:wait}
 .ygsToast{position:fixed;z-index:99;bottom:max(22px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 36px);background:#163f42;color:white;padding:11px 16px;border-radius:12px;box-shadow:0 8px 28px #0004;font-size:14px;font-weight:600;text-align:center;pointer-events:none}
 .ygsToast.isError{background:#773a32}
 @media(prefers-reduced-motion:reduce){.row{transition:none}}
+
+
+/* v22: compact, balanced iPhone landscape reading view.
+   Only short landscape viewports are affected; portrait and projector layouts stay unchanged. */
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 899px) {
+  /* Retain iOS safe-area padding, but reclaim vertical space below it. */
+  .songHead { min-height: 0; }
+  .songHeadInner { height: 44px; }
+  .songTitleButton { padding-top: 2px; padding-bottom: 2px; }
+  .back { font-size: 34px; }
+  .gear { font-size: 22px; }
+
+  /* Centre the readable lyric block, not the words themselves.
+     Long lines can wrap inside the available screen width. */
+  .lyrics {
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    max-width: none;
+    margin: 6px auto 18px;
+    padding: 9px max(14px, env(safe-area-inset-right)) 16px max(14px, env(safe-area-inset-left));
+  }
+  .lyrics > .mobile-polish {
+    width: max-content;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+  .lyrics .line, .lyrics .partLine { text-align: left; }
+
+  /* Paired voice songs need the full width for their two parallel parts. */
+  .lyrics > .mobile-polish:has(.voice-song) { width: 100%; }
+}
