@@ -160,3 +160,28 @@ button:disabled{opacity:.65;cursor:wait}
   /* Paired voice songs need the full width for their two parallel parts. */
   .lyrics > .mobile-polish:has(.voice-song) { width: 100%; }
 }
+
+
+/* v23: protect landing-page song numbers from iPhone landscape safe-area clipping.
+   Limit to short landscape/mobile widths; portrait and song reading views unchanged. */
+@media (orientation: landscape) and (max-height: 600px) and (max-width: 899px) {
+  .home .list {
+    padding-left: max(18px, calc(env(safe-area-inset-left) + 12px));
+    padding-right: max(18px, calc(env(safe-area-inset-right) + 12px));
+  }
+  .home .list .row { min-width: 0; }
+  .home .list .num {
+    width: 38px;
+    min-width: 38px;
+    flex: 0 0 38px;
+    font-variant-numeric: tabular-nums;
+  }
+  .home .list .title { min-width: 0; }
+}
+
+/* v24: install instructions in the existing menu dialog; no song layout changes. */
+.installCard{max-height:min(85vh,720px);overflow-y:auto}
+.installCard .installIntro{margin:4px 0 12px;line-height:1.45;color:#365653}
+.installCard ol{margin:6px 0 12px;padding-left:23px;color:#243c3b;line-height:1.55}
+.installCard li{margin:5px 0}
+.installCard .installNote{font-size:13px;color:#56726e;line-height:1.45;margin:12px 0}
